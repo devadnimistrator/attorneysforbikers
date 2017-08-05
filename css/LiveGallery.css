@@ -1,0 +1,422 @@
+/*
+ * jQuery UI CSS Framework 1.8.14
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ */
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.ui-helper-clearfix { display:block; }
+/* end clearfix */
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled { cursor: default !important; }
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.LiveGalleryDefault .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.ui-widget-overlay.ui-front { position: fixed; }
+
+
+/*
+ * jQuery UI CSS Framework 1.8.14
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ *
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Verdana,Arial,sans-serif&fwDefault=normal&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=cccccc&bgTextureHeader=03_highlight_soft.png&bgImgOpacityHeader=75&borderColorHeader=aaaaaa&fcHeader=222222&iconColorHeader=222222&bgColorContent=ffffff&bgTextureContent=01_flat.png&bgImgOpacityContent=75&borderColorContent=aaaaaa&fcContent=222222&iconColorContent=222222&bgColorDefault=e6e6e6&bgTextureDefault=02_glass.png&bgImgOpacityDefault=75&borderColorDefault=d3d3d3&fcDefault=555555&iconColorDefault=888888&bgColorHover=dadada&bgTextureHover=02_glass.png&bgImgOpacityHover=75&borderColorHover=999999&fcHover=212121&iconColorHover=454545&bgColorActive=ffffff&bgTextureActive=02_glass.png&bgImgOpacityActive=65&borderColorActive=aaaaaa&fcActive=212121&iconColorActive=454545&bgColorHighlight=fbf9ee&bgTextureHighlight=02_glass.png&bgImgOpacityHighlight=55&borderColorHighlight=fcefa1&fcHighlight=363636&iconColorHighlight=2e83ff&bgColorError=fef1ec&bgTextureError=02_glass.png&bgImgOpacityError=95&borderColorError=cd0a0a&fcError=cd0a0a&iconColorError=cd0a0a&bgColorOverlay=aaaaaa&bgTextureOverlay=01_flat.png&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=aaaaaa&bgTextureShadow=01_flat.png&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px
+ */
+
+
+/* Component containers
+----------------------------------*/
+.LiveGalleryDefault.ui-widget, .LiveGalleryDefault .ui-widget { font-family: Verdana,Arial,sans-serif; font-size: 12px; }
+.LiveGalleryDefault.ui-widget input, .LiveGalleryDefault.ui-widget select, .LiveGalleryDefault.ui-widget textarea, .LiveGalleryDefault.ui-widget button, .LiveGalleryDefault .ui-widget input, .LiveGalleryDefault .ui-widget select, .LiveGalleryDefault.ui-widget textarea, .LiveGalleryDefault .ui-widget button { font-family: Verdana,Arial,sans-serif; font-size: 1em; }
+.LiveGalleryDefault.ui-widget-content, .LiveGalleryDefault .ui-widget-content { border: 1px solid #aaaaaa; background: #ffffff; color: #222222; z-index: 9999}
+.LiveGalleryDefault .ui-widget-header { border: 1px solid #aaaaaa; background: #cccccc; color: #222222; font-weight: bold; }
+.LiveGalleryDefault .ui-widget-header a { color: #222222; }
+
+/* Interaction states
+----------------------------------*/
+.LiveGalleryDefault .ui-state-default { border: 1px solid #d3d3d3; background: #e6e6e6 ; font-weight: normal; color: #555555; outline: none; }
+.LiveGalleryDefault .ui-state-default a, .LiveGalleryDefault .ui-state-default a:link, .LiveGalleryDefault .ui-state-default a:visited { color: #555555; text-decoration: none; outline: none; }
+.LiveGalleryDefault .ui-state-hover, .LiveGalleryDefault .ui-state-focus { border: 1px solid #999999; background: #dadada; font-weight: normal; color: #212121; outline: none; }
+.LiveGalleryDefault .ui-state-hover a, .LiveGalleryDefault .ui-state-hover a:hover { color: #212121; text-decoration: none; outline: none; }
+.LiveGalleryDefault .ui-state-active { border: 1px solid #aaaaaa; background: #ffffff ; font-weight: normal; color: #212121; outline: none; }
+.LiveGalleryDefault .ui-state-active a, .LiveGalleryDefault .ui-state-active a:link, .LiveGalleryDefault .ui-state-active a:visited { color: #212121; outline: none; text-decoration: none; }
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #fcefa1; background: #fbf9ee ; color: #363636; }
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: #363636; }
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #cd0a0a; background: #fef1ec; color: #cd0a0a; }
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: #cd0a0a; }
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text { color: #cd0a0a; }
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { font-weight: bold; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+/*.LiveGalleryDefault .ui-icon { width: 16px; height: 16px; background-image: url(images/ui-icons_222222_256x240.png); }
+.LiveGalleryDefault .ui-widget-content .ui-icon {background-image: url(images/ui-icons_222222_256x240.png); }
+.LiveGalleryDefault .ui-widget-header .ui-icon {background-image: url(images/ui-icons_222222_256x240.png); }
+.LiveGalleryDefault .ui-state-default .ui-icon { background-image: url(images/ui-icons_888888_256x240.png); }
+.LiveGalleryDefault .ui-state-hover .ui-icon, .LiveGalleryDefault .ui-state-focus .ui-icon {background-image: url(images/ui-icons_454545_256x240.png); }
+.LiveGalleryDefault .ui-state-active .ui-icon {background-image: url(images/ui-icons_454545_256x240.png); }
+.LiveGalleryDefault .ui-state-highlight .ui-icon {background-image: url(images/ui-icons_2e83ff_256x240.png); }
+.LiveGalleryDefault .ui-state-error .ui-icon, .LiveGalleryDefault .ui-state-error-text .ui-icon {background-image: url(images/ui-icons_cd0a0a_256x240.png); }*/
+
+/* positioning */
+
+.LiveGalleryDefault .ui-icon-arrow-4 { background-position: 0 -80px; }
+.LiveGalleryDefault .ui-icon-trash { background-position: -176px -96px; }
+.LiveGalleryDefault .ui-icon-pencil { background-position: -64px -112px; }
+.LiveGalleryDefault .ui-icon-closethick { background-position: -96px -128px; }
+.LiveGalleryDefault .ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+.LiveGalleryDefault .ui-icon-plus { background-position: -16px -128px; }
+.LiveGalleryDefault .ui-icon-image { background-position: -208px -128px; }
+.LiveGalleryDefault .ui-icon-check { background-position: -64px -144px; }
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.LiveGalleryDefault .ui-corner-all, .LiveGalleryDefault .ui-corner-top, .LiveGalleryDefault .ui-corner-left, .LiveGalleryDefault .ui-corner-tl { -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; -khtml-border-top-left-radius: 4px; border-top-left-radius: 4px; }
+.LiveGalleryDefault .ui-corner-all, .LiveGalleryDefault .ui-corner-top, .LiveGalleryDefault .ui-corner-right, .LiveGalleryDefault .ui-corner-tr { -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; -khtml-border-top-right-radius: 4px; border-top-right-radius: 4px; }
+.LiveGalleryDefault .ui-corner-all, .LiveGalleryDefault .ui-corner-bottom, .LiveGalleryDefault .ui-corner-left, .LiveGalleryDefault .ui-corner-bl { -moz-border-radius-bottomleft: 4px; -webkit-border-bottom-left-radius: 4px; -khtml-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; }
+.LiveGalleryDefault .ui-corner-all, .LiveGalleryDefault .ui-corner-bottom, .LiveGalleryDefault .ui-corner-right, .LiveGalleryDefault .ui-corner-br { -moz-border-radius-bottomright: 4px; -webkit-border-bottom-right-radius: 4px; -khtml-border-bottom-right-radius: 4px; border-bottom-right-radius: 4px; }
+
+/* Overlays */
+.ui-widget-overlay { background: #aaaaaa; opacity: .30;filter:Alpha(Opacity=30); }
+.ui-widget-shadow { margin: -8px 0 0 -8px; padding: 8px; background: #aaaaaa ; opacity: .30;filter:Alpha(Opacity=30); -moz-border-radius: 8px; -khtml-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }/*
+
+/*
+ * jQuery UI Resizable 1.8.14
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Resizable#theming
+ */
+.LiveGalleryDefault .ui-resizable { position: relative;}
+.LiveGalleryDefault .ui-resizable-handle { position: absolute;font-size: 0.1px;z-index: 99999; display: block; }
+.LiveGalleryDefault .ui-resizable-disabled .ui-resizable-handle, .LiveGalleryDefault .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.LiveGalleryDefault .ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+.LiveGalleryDefault .ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+.LiveGalleryDefault .ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
+.LiveGalleryDefault .ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+.LiveGalleryDefault .ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.LiveGalleryDefault .ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.LiveGalleryDefault .ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.LiveGalleryDefault .ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}/*
+ * jQuery UI Selectable 1.8.14
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Selectable#theming
+ */
+.ui-selectable-helper { position: absolute; z-index: 100; border:1px dotted black; }
+/*
+ * jQuery UI Dialog 1.8.14
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Dialog#theming
+ */
+.LiveGalleryDefault.ui-dialog { position: absolute; padding: .2em; width: 300px; overflow: hidden; }
+.LiveGalleryDefault.ui-dialog .ui-dialog-titlebar { padding:5px 0 3px; position: relative; width:99.6%; height:20px; float:left; }
+.LiveGalleryDefault.ui-dialog .ui-dialog-title { float: left; margin: .1em 16px .2em 5px; } 
+.LiveGalleryDefault.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: 3px !important; width: 19px; top: 5px !important; margin: 0 !important; padding: 0 !important; height: 18px !important; background:none !important; border:0 !important; border-radius: 0 !important }
+.LiveGalleryDefault.ui-dialog .ui-dialog-titlebar-close span { display: block; }
+.LiveGalleryDefault.ui-dialog .ui-dialog-titlebar-close:hover, LiveGalleryDefault.ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; }
+.LiveGalleryDefault.ui-dialog .ui-dialog-content { position: relative; border: 0; padding: 5px; background: none; overflow: auto; zoom: 1; }
+.LiveGalleryDefault.ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
+.LiveGalleryDefault.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { float: right; }
+.LiveGalleryDefault.ui-dialog .ui-dialog-buttonpane button { margin: .5em .4em .5em 0; cursor: pointer; }
+.LiveGalleryDefault.ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
+.LiveGalleryDefault.ui-draggable .ui-dialog-titlebar { cursor: move; }
+
+.LiveGalleryDefault a.mbutton{font-family:Helvetica,Arial,sans-serif; padding: 5px 10px; background: #818181; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#818181, endColorstr=#656565); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#818181, endColorstr=#656565)"; background: -webkit-gradient(linear, left top, left bottom, from(#818181), to(#656565)); background: -moz-linear-gradient(center top , #818181 0%, #656565 100%) repeat scroll 0 0 transparent; border-color: #FFFFFF; border-radius: 3px; color: #FFFFFF; font-weight: bold; text-decoration: none; text-shadow: 0 1px 1px #000000; border-radius: 3px; -moz-border-radius: 3px; webkit-border-radius: 3px;}
+.LiveGalleryDefault a.mbutton:hover {background:#4E4E4E; color: #ffffff; text-decoration:none;}
+.LiveGalleryDefault a.mbutton2 {font-weight: bold;padding: 8px;text-decoration: none; color:#003366;}
+.LiveGalleryDefault a.mbutton2:hover {text-decoration:underline; color:#000}
+.LiveGalleryDefault ul { list-style-type: none; margin: 0; padding: 0; }
+.LiveGalleryDefault li { float: left; list-style-type: none;}
+.LiveGalleryDefault li:before{ content: normal !important; }
+.LiveGalleryDefault .LGAlbum { margin:5px 5px 5px 0pt; padding: 10px 0 0 0; text-align: center; width: 300px; background-color: #F6F6F6; border: 1px solid #E6E6E6; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
+.LiveGalleryDefault .LGAlbumAdmin { height: 100px; }
+.LiveGalleryDefault .LGImage { height: 90px; margin: 5px 5px 5px 0pt; padding: 10px 0 0 0; text-align: center; width: 100px; background-color: #F6F6F6; border: 1px solid #E6E6E6; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
+.LiveGalleryDefault .LGImageAdmin { height: 100px; }
+.LiveGalleryDefault .LGAlbumInfo { height: 80px; padding-left: 10px; margin-right: 10px; text-align: left; overflow: hidden; }
+.LiveGalleryDefault .LGAlbumInfo .small { color: #8DB8CF; display: block; font-size: 8px; }
+.LiveGalleryDefault .LGAlbumInfo p { font-size: 10px; line-height:12px; margin-top: 5px; padding: 0; padding-right:10px; color: #2E3D47; }
+.LiveGalleryDefault .LGAlbumName { color: #002E5B; font-family: "Helvetica Neue","Lucida Grande",Helvetica,Arial,sans-serif; font-size: 110%; font-size-adjust: none; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; }
+.LiveGalleryDefault .LGAlbum a img { border: 0pt none; float: left; margin-left: 10px; }
+.LiveGalleryDefault .LGImage a img { border: 0pt none; }
+.LiveGalleryDefault .LGAlbumAdminControls, .LiveGalleryDefault .LGImageAdminControls { margin: 0; padding: 0pt 5px 0pt 5px; clear: both; }
+.LiveGalleryDefault .LGRSSIcon{background-repeat:no-repeat;display:block;overflow:hidden;text-indent:-99999px;width: 16px; height: 16px; background-image: url(images/016.png); float:right;margin-top:-15px;margin-right:7px;}
+.LiveGalleryDefault hr, .livetabsdefaultdefault hr { margin:7px 0; }
+.livetabsdefaultdefault .txtWidth{width:65px;}
+
+.LGPageDiv {font-family:Trebuchet MS,Tahoma,Helvetica,sans-serif;font-size:0.85em;margin:3px;padding:3px;text-align:center;}
+.LGPageDiv a {background-position:center bottom;border:1px solid #CCDBE4;color:#0061DE;margin-right:3px;padding:2px 8px;text-decoration:none;}
+.LGPageDiv a:hover, .LGPageDiv a:active {background-color:#3666D4;background-image:none;border:1px solid #2B55AF;color:#FFFFFF;}
+.LGPageDiv span.LGPageNoSelected {color:#000000;font-weight:bold;margin-right:3px;padding:2px 6px;}
+.LGPageDiv a.LGPageNext {border:2px solid #CCDBE4;margin:0 0 0 10px;}
+.LGPageDiv a.LGPageNext:hover {border:2px solid #2B55AF;}
+.LGPageDiv a.LGPagePrev {border:2px solid #CCDBE4;margin:0 10px 0 0;}
+.LGPageDiv a.LGPagePrev:hover {border:2px solid #2B55AF;}
+.DnnModule-LiveGallery .ModLiveGalleryC { overflow: hidden; }
+
+#jquery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 500px;
+}
+#jquery-lightbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	text-align: center;
+	line-height: 0;
+}
+#jquery-lightbox a img { border: none; }
+#lightbox-container-image-box {
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+}
+#lightbox-container-image { padding: 10px; }
+#lightbox-loading {
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+}
+#lightbox-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+	width: 49%;
+	height: 100%;
+	zoom: 1;
+	display: block;
+}
+#lightbox-nav-btnPrev { 
+	left: 0; 
+	float: left;
+}
+#lightbox-nav-btnNext { 
+	right: 0; 
+	float: right;
+}
+#lightbox-container-image-data-box {
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%;
+	padding: 0 10px 0;
+}
+#lightbox-container-image-data {
+	padding: 0 10px; 
+	color: #666; 
+}
+#lightbox-container-image-data #lightbox-image-details { 
+	width: 70%; 
+	float: left; 
+	text-align: left; 
+}	
+#lightbox-image-details-caption { font-weight: bold; }
+#lightbox-image-details-currentNumber {
+	display: block; 
+	clear: left; 
+	padding-bottom: 1.0em;	
+}			
+#lightbox-secNav-btnClose {
+	width: 66px; 
+	float: right;
+	padding-bottom: 0.7em;	
+}
+
+
+.rollover a {
+display:block;
+width: 230px;
+height:45px;
+text-decoration: none;
+text-indent: -10000px;
+}
+/*
+#IM1
+{
+background: url("images/HL.jpg") 0 -226px no-repeat;
+}
+
+#IM1:hover
+{
+background: url("images/HL.jpg") 0 -1px no-repeat;
+}
+
+
+#IM2
+{
+background: url("images/HL.jpg") 0 -271px no-repeat;
+}
+
+#IM2:hover
+{
+background: url("images/HL.jpg") 0 -46px no-repeat;
+}
+
+#IM3
+{
+background: url("images/HL.jpg") 0 -316px no-repeat;
+}
+
+#IM3:hover
+{
+background: url("images/HL.jpg") 0 -91px no-repeat;
+}
+
+#IM4
+{
+background: url("images/HL.jpg") 0 -361px no-repeat;
+}
+
+#IM4:hover
+{
+background: url("images/HL.jpg") 0 -136px no-repeat;
+}
+
+#IM5
+{
+background: url("images/HL.jpg") 0 -406px no-repeat;
+}
+
+#IM5:hover
+{
+background: url("images/HL.jpg") 0 -181px no-repeat;
+}
+*/
+#lightbox-slideshow
+{
+padding: 0pt; 
+border: medium none; 
+position: absolute; 
+visibility: visible; 
+width: auto; 
+direction: ltr; 
+display:none;
+opacity:2;
+left: 42%; 
+height: auto; 
+z-index:11;
+top:0;
+}
+/*
+.lightbox-controls
+{
+background:url("images/controlbar-white.gif") no-repeat scroll 0 -90px transparent;
+height:40px;
+margin:20px 15px 10px 0;
+width:110px;
+}
+
+.lightbox-controls ul 
+{
+background:url("images/controlbar-white.gif") no-repeat scroll right -90px transparent;
+height:40px;
+left:15px;
+list-style:none outside none;
+margin:0;
+padding:0;
+position:relative;
+}
+
+.lightbox-controls li {
+float:left;
+list-style:none outside none;
+margin:0;
+padding:5px 0;}
+
+.lightbox-controls .lightbox-previous a {
+background-position:0 0;
+opacity:0;
+}
+
+.lightbox-controls a {
+background-image:url("images/controlbar-white.gif");
+display:block;
+float:left;
+height:30px;
+outline:medium none;
+width:30px;
+}
+
+.lightbox-controls .lightbox-play a {
+background-position:-30px 0;
+
+}
+
+.lightbox-controls .lightbox-next a {
+background-position:-90px 0;
+opacity:0;
+}
+
+.lightbox-controls a span {
+cursor:pointer;
+display:none;}*/

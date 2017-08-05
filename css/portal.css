@@ -1,0 +1,62 @@
+/* 
+ * Deprecated DNN CSS class names will remain available for some time
+ * before being  permanently removed. Removal will occur according to
+ * the  following process:
+ *
+ * 1. Removal will only occur with a major (x.y) release, never
+ *    with a maintenance (x.y.z) release.
+ * 2. Removal will not occur less than six months after the release
+ *    when it was deprecated.
+ * 3. Removal will not occur until after deprecation has been noted 
+ *    in at least two major releases.
+ *
+ *                                              |        |Planned |
+ *  Name                                        |Release |Removal |
+ *----------------------------------------------+--------+--------+
+ * Mod{NAME}C                                     5.6.2    6.2
+ *   {NAME} = sanitized version of the DesktopModule Name 
+ *   Used on <div> tag surrounding Module Content, inside container
+ *----------------------------------------------+--------+--------+
+ */  
+
+
+
+body, html {background-color:#fff; text-align:left;}
+.dnnBoxLabel { display: inline-block; color:#000000 !important;}
+
+.ContentHead { color: #444444; text-align: center; padding-bottom: 0.5em; margin: 0 auto 0.5em; line-height: 1.2em;}
+.ContentHeadMain { color: #444444; font-weight:normal; text-align: center; padding-bottom: 0.5em; margin: 0 auto 0.5em; line-height: 1.2em; font-size:28px;}
+.ContentHeadList { color: #444444; font-weight:bold; text-align: left; padding-bottom: 0.5em; margin: 0 auto 0.5em; line-height: 1.2em; font-size:20px;}
+.ContentHeadBold { color: #444444; font-weight:bold; text-align: center; padding-bottom: 0.5em; border-bottom: 1px solid #666666; margin: 0 auto 0.5em; line-height: 1.2em;}
+
+.textLeft {text-align: left;}
+.textRight {text-align: right;}
+.textCenter {text-align: center}
+
+.attorney-profile {border:1px solid #000000; height:130px; width:108px; overflow:hidden;}
+.attorney-profile img {width:108px; height: auto; margin-top:-10px; text-align:center;}
+.attorney-underline {width:100%; border-bottom: 1px dotted #cccccc; margin:0 auto 6px; clear:both;}
+.StaffTitle { font-family: 'coustardregular',serif; color: #01527d;text-align:center; font-weight:normal;}
+.DkTitle {color:#01527D; font-family: 'coustardregular',serif;text-align:center;}
+.Underline{border-bottom: 1px solid #666666; margin: 0 auto 0.5em; line-height: 1.2em;}
+
+h1, h2, h3, h4, h5, h6 { font-family: Georgia, Cambria, "Times New Roman", Times, serif; }
+h1 {font-size:24px;}
+h2 {font-size:24px;}
+h3 {font-size:24px;}
+h4 {font-size: 16px; margin: 0 auto 0.5em;text-align:left;}
+h5 {font-size: 16px; margin: 0 auto 0.5em;text-align:left;}
+h6 {font-size: 14px; margin: 0 auto 0.5em;text-align:left;}
+ p { margin: 0 auto 1em; }
+
+.imgLeft { float: left; margin-right: 10px; margin-bottom: 5px; }
+
+.imgRight { float: right; margin-left: 10px; margin-bottom: 5px; }
+
+.imgBorder { border: solid 3px #fff; }
+
+.imgPolaroid { color: #a6a6a6; font-size: 12px; text-align: left; padding: 13px 13px 17px 13px; background-color: #fff; box-shadow: 0 1px 2px #ccc;}
+
+.imgPolaroid img { margin-bottom: 12px; }
+
+
